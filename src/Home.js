@@ -5,7 +5,7 @@ export class HomePage extends Component {
   render() {
     return (
       <div>
-        <h1 className="name">lil Boi</h1>
+        <h1 className="name">S(o)undu</h1>
 
         <img
           className="intro-picture"
@@ -16,7 +16,7 @@ export class HomePage extends Component {
           style={{ borderRadius: "50%" }}
         />
         <h3>Behold the greatest text-to-speech rap bot of all time.</h3>
-        <h4>Most popular in SSN College of Engineering, CSE department.</h4>
+        <h4>Built in SSN College of Engineering, CSE department.</h4>
       </div>
     );
   }
