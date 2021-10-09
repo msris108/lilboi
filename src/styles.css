@@ -1,0 +1,189 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+  background-color: transparent;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+.particles {
+  position: absolute;
+  height: 150%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 3%,
+    rgba(42, 139, 6, 1) 100%,
+    rgba(61, 7, 196, 1) 100%
+  );
+}
+
+.name {
+  font-size: 7rem;
+}
+
+.sidebar {
+  background-color: #151b0e;
+  transition: width 600ms ease;
+  position: fixed;
+  overflow: hidden;
+  z-index: 2;
+  height: 50%;
+  justify-content: flex-end;
+  padding-top: 10rem;
+  margin-top: 3rem;
+}
+
+.link-icon {
+  color: white;
+}
+.sidebar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.link {
+  width: 100%;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: white;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: 600ms;
+}
+
+.sidebar-item-name {
+  display: none;
+  margin-left: 1rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar-item .link-icon {
+  font-size: 40px;
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+/*Logo-icon on top of navigation bar */
+.menu-icon {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  background: #151b0e;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.menu-icon .logo-icon {
+  font-size: 40px;
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  transform: rotate(0deg);
+  transition: 600ms;
+}
+
+.menu-icon-name {
+  display: inline;
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-left: 4rem;
+  left: -999px;
+  transition: 600ms;
+}
+
+/*Sidebar and items under hover */
+
+.sidebar-item:hover {
+  filter: grayscale(0%) opacity(1);
+  background: #122f08;
+  color: white;
+}
+
+.sidebar:hover .menu-icon .logo-icon {
+  transform: rotate(-180deg);
+}
+
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .sidebar:hover {
+    width: 16rem;
+  }
+
+  .sidebar:hover .sidebar-item-name {
+    display: inline;
+  }
+
+  .sidebar:hover .menu-icon .logo-icon {
+    margin-left: 11rem;
+  }
+
+  .sidebar:hover .menu-icon-name {
+    left: 0px;
+  }
+}
+
+.pageheading {
+  position: absolute;
+  z-index: inherit 2;
+  margin-top: 5rem;
+  margin-left: 8rem;
+  font-size: 3rem;
+}
+
+.analytics {
+  padding-top: 10rem;
+  /* background-color: black; */
+  /* opacity: 0.6; */
+}
+
+.pie, .area{
+  background-color: black;
+  width: 70%;
+}
